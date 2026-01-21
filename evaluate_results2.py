@@ -5,7 +5,7 @@ from sklearn.metrics import (
 )
 from statsmodels.stats.contingency_tables import mcnemar
 
-# ielādē CSV (faila nosaukums 'test_results.csv')
+# tiek ielādēts CSV (faila nosaukums 'test_results.csv')
 df = pd.read_csv('test_results.csv', sep=';')
 
 tools = ['copilot_pred', 'chatgpt_pred', 'plantapp_pred']
@@ -57,7 +57,7 @@ for tool in tools:
     print(cm)
     print(classification_report(y_true, y_pred, target_names=['Healthy', 'Infected']))
 
-#  McNemar tests (piemērs: copilot vs plantapp) 
+#  McNemar tests 
 
 def pair_contingency(y_true, a_pred, b_pred):
     a_corr = (y_true == a_pred)
