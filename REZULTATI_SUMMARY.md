@@ -51,12 +51,12 @@ True  Healthy      71         39
 ## Neparametriskais statistiskais tests: McNemar tests
 
 - **Testa rezultāti:**
-      - `copilot_pred` vs `chatgpt_pred`: contingency = [[126, 49], [25, 20]], p = 0.00708
-      - `copilot_pred` vs `plantapp_pred`: contingency = [[136, 39], [32, 13]], p = 0.47669
-      - `chatgpt_pred` vs `plantapp_pred`: contingency = [[126, 25], [42, 27]], p = 0.04980
+      - `copilot_pred` vs `chatgpt_pred`: p = 0.00708
+      - `copilot_pred` vs `plantapp_pred`: p = 0.47669
+      - `chatgpt_pred` vs `plantapp_pred`: p = 0.04980
 
 - **Interpretācija:**
-      - `copilot` vs `chatgpt`: p = 0.00708 < 0.05 0.05— atšķirība ir **statistiski nozīmīga**; Copilot darbojas labāk.
+      - `copilot` vs `chatgpt`: p = 0.00708 < 0.05 — atšķirība ir **statistiski nozīmīga**; Copilot darbojas labāk.
       - `copilot` vs `plantapp`: p = 0.47669 > 0.05 — **nav statistiski nozīmīgas atšķirības**.
       - `chatgpt` vs `plantapp`: p = 0.04980 ~ 0.05 — ļoti tuvu robežai; pēc klasiskas 0.05 robežas tas ir **statistiski nozīmīgs**, taču efektam ir jābūt interpretētam piesardzīgi.
 
